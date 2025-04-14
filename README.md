@@ -1,9 +1,18 @@
 # Mine Hyprland dots
-For now this repo will only contain few and very basic configs file that i use, such as; rofi, waybar, hyprpaper, and hyprlock configs for hyprland.
+This repository contains a few basic configuration files I use for my Hyprland setup. These configs include:
 
+- rofi
+
+- waybar
+
+- hyprpaper
+
+- hyprlock
+  
 ![Image](https://github.com/user-attachments/assets/a456d703-9d88-4596-be90-cc7c98288933)
 
-List of 
+
+# Credits
 
 I'd like to thank shdShadow for giving me base for waybar, which i modified. Here's link to his repo : 
 https://github.com/shdShadow/Hyprland-pokemon
