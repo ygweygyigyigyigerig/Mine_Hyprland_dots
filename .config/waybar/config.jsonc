@@ -1,0 +1,149 @@
+
+{
+	"layer": "top",
+	"position": "top",
+	"height": 30,
+	"modules-left": [
+		"network",
+		"custom/void",
+		"network#net2"
+	],
+	"modules-center": [
+		"hyprland/workspaces"
+	],
+	"modules-right": [
+		"wlr/taskbar",
+		"custom/space",
+		"clock",
+		"backlight",
+		"backlight/slider",
+		"custom/space",
+		"pulseaudio#sink",
+		"pulseaudio/slider",
+		"custom/space",
+		"custom/poweroff",
+		"custom/reboot",
+		"custom/lock"
+	],
+	"hyprland/workspaces": {
+		"active-only": false,
+		"all-outputs": true,
+		"on-scroll-up": "hyprctl dispatch workspace -1",
+		"on-scroll-down": "hyprctl dispatch workspace +1",
+		"format": "{name}",
+		"on-click": "activate",
+		//"format-icons": {
+		//"urgent": "",
+		//"default": "",
+		//"default": "󰧞",
+		//"sort-by-number": true,
+		"height": 0
+	},
+
+
+      "hyprland/applications": {
+    "exec": "hyprctl clients | grep -oP '(?<=title: ).*' | tr '\n' ' '",
+    "interval": 5,
+    "format": "{output}",
+    "tooltip": "Running Applications"
+
+      },
+
+      "wlr/taskbar": {
+      "icon-size": 23,
+      "on-click": "activate",
+      "on-click-right": "~/.config/hypr/scripts/taskbar_menu.sh",
+      "format": "{icon}"
+      },	
+
+	"clock": {
+	"format": "{:%H:%M}",
+        "interval": 60
+        }, 
+
+	"network": {
+		"interval": 5,
+		"interface": "enp7s0",
+		"format": "{ifname}",
+		"format-wifi": " {ifname}",
+		"format-ethernet": "{ifname}",
+		"format-disconnected": "{ifname}",
+		"max-length": 50,
+		"format-icons": [
+			"󰤯",
+			"󰤟",
+			"󰤢",
+			"󰤥",
+			"󰤨"
+		]
+	},
+
+
+	"custom/poweroff": {
+		"format": "",
+    		"tooltip": "Power Off",
+		"on-click": "systemctl poweroff",
+  		"interval": 3600
+},
+
+
+	"custom/reboot": {
+		"format": "",
+    		"tooltip": "reboot",
+		"on-click": "reboot",
+  		"interval": 3600
+},
+
+
+	"custom/lock": {
+		"format": "",
+    		"tooltip": "lock",
+		"on-click": "hyprlock",
+  		"interval": 3600
+},
+
+	"network#net2": {
+		"interval": 5,
+		"interface": "enp7s0",
+		"format": "<span color='cyan'></span>{bandwidthDownBytes:>} <span color='cyan'> </span>{bandwidthUpBytes:>}"
+	},
+	"custom/void": {
+		"format": "<span color='cyan'>  󰇙 </span>"
+	},
+	"custom/space": {
+		"format": "<span>  </span>"
+	},
+	"pulseaudio/slider": {
+		"min": 0,
+		"max": 100,
+		"orientation": "horizontal"
+	},
+	"pulseaudio#sink": {
+		"format": "{icon}",
+		"format-bluetooth": "{icon}",
+		"format-muted": "󰝟",
+		"format-icons": {
+			"headphone": "󰋋",
+			"hands-free": "󱡏",
+			"headset": "󰋎",
+			"phone": "",
+			"portable": "",
+			"car": "",
+			"default": [
+				"󰖀",
+				"󰕾"
+			]
+		},
+		"ignored-sinks": [
+			"Easy Effects Sink"
+		],
+		"smooth-scrolling-threshold": "4",
+		"scroll-step": "5",
+		"on-click-middle": "pactl set-default-sink $(pactl list short sinks | awk '{print $2}' | sed '/easyeffects_sink/d' | sed \"/$(pactl get-default-sink)/d\" | tofi --prompt-text \" \" --height 118 --width 480 --anchor bottom-right --margin-right 80 --margin-bottom 50 --auto-accept-single true )",
+		"on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+		"on-click": "pkill pavucontrol ; pavucontrol",
+		"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ -l 2.0",
+		"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- -l 2.0"
+	},
+
+}
