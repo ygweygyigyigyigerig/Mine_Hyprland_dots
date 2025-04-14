@@ -19,3 +19,7 @@ https://github.com/shdShadow/Hyprland-pokemon
 
 I'd like to thank George Lemanis aswell for giving me base for rofi. Here's link to his repo:
 https://github.com/dracula/rofi
+
+# Disclaimer
+This project is still under development.
+Some configurations may not work (beacaucse I could paste them wrongly), and changes will be made over time. If you encounter any issues, feel free to DM me, and I'll do my best to assist.
