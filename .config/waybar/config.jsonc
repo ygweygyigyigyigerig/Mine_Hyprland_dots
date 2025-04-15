@@ -33,15 +33,6 @@
 		"height": 0
 	},
 
-
-      "hyprland/applications": {
-    "exec": "hyprctl clients | grep -oP '(?<=title: ).*' | tr '\n' ' '",
-    "interval": 5,
-    "format": "{output}",
-    "tooltip": "Running Applications"
-
-      },
-
       "wlr/taskbar": {
       "icon-size": 23,
       "on-click": "activate",
