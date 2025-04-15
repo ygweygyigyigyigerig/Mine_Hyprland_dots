@@ -27,6 +27,7 @@ This repository contains a few basic configuration files I use for my Hyprland s
   
 - **Terminal**: kitty
 
+- **File manager**: dolphin
 
 # Credits
 
