@@ -10,6 +10,8 @@ This repository contains a few basic configuration files I use for my Hyprland s
 - hyprlock
 
 - swaync
+
+- zsh (config will be uploaded in future) 
   
 ![Image](https://github.com/user-attachments/assets/23b5b1ab-e8d1-460d-a1f0-13badb569246)
 # Dependencies
@@ -26,6 +28,10 @@ This repository contains a few basic configuration files I use for my Hyprland s
 - **Qt based software support**: qt6-wayland and qt5-wayland
   
 - **Fonts**: ttf-font-awesome
+
+- **Lock screen**: hyprlock
+
+- **Wallpaper managing**: hyprpaper
   
 - **Window Manager**: hyprland
   
