@@ -11,6 +11,9 @@ This repository contains a few basic configuration files I use for my Hyprland s
   
 ![Image](https://github.com/user-attachments/assets/a456d703-9d88-4596-be90-cc7c98288933)
 
+# Dependencies :
+
+under work
 
 # Credits
 
