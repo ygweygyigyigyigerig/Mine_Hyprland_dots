@@ -10,10 +10,23 @@ This repository contains a few basic configuration files I use for my Hyprland s
 - hyprlock
   
 ![Image](https://github.com/user-attachments/assets/a456d703-9d88-4596-be90-cc7c98288933)
+# Dependencies
 
-# Dependencies :
+- System dependencies: sudo pacman -Syu
 
-under work
+- Audio: pulseaudio
+
+- Fonts: ttf-font-awesome
+
+- Window Manager: hyprland
+
+- Status Bar: waybar
+
+- Launcher: rofi-wayland
+
+- Browser: firefox
+
+- Terminal: kitty
 
 # Credits
 
