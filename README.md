@@ -28,6 +28,11 @@ This repository contains a few basic configuration files I use for my Hyprland s
 - **Terminal**: kitty
 
 - **File manager**: dolphin
+  
+- **Notifications center**: swaync
+  
+  **All swaync dependencies** : ```sudo pacman -S swaync vala meson blueprint-compiler git scdoc sassc gtk4 gtk4-layer-shell dbus glib2 gobject-introspection libgee json-glib libadwaita gvfs granite7```
+
 
 # Credits
 
