@@ -45,7 +45,6 @@
       "wlr/taskbar": {
       "icon-size": 23,
       "on-click": "activate",
-      "on-click-right": "~/.config/hypr/scripts/taskbar_menu.sh",
       "format": "{icon}"
       },	
 
