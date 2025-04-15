@@ -15,7 +15,15 @@ This repository contains a few basic configuration files I use for my Hyprland s
 # Dependencies
 - **System dependencies**: ```sudo pacman -Syu```
 
+- **Netwrok**: networkmanager
+
+- **Shell**: zsh (config will be uploaded in future)
+
 - **Audio**: pulseaudio
+
+- **Bluetooth**: bluez and bluez-utils
+
+- **Qt based software support**: qt6-wayland and qt5-wayland
   
 - **Fonts**: ttf-font-awesome
   
