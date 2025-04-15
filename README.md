@@ -45,7 +45,7 @@ I'd like to thank George Lemanis aswell for giving me base for rofi. Here's link
 https://github.com/dracula/rofi
 
 And also a big shoutout to BinaryHarbinger for the Swaync config I used for my rice.
-Here's link to his repo : https://github.com/BinaryHarbinger/Dotfiles
+Here's link to his repo: https://github.com/BinaryHarbinger/Dotfiles
 
 # Disclaimer
 This project is still under development.
