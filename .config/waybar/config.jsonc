@@ -15,8 +15,6 @@
 		"wlr/taskbar",
 		"custom/space",
 		"clock",
-		"backlight",
-		"backlight/slider",
 		"custom/space",
 		"pulseaudio#sink",
 		"pulseaudio/slider",
@@ -32,11 +30,6 @@
 		"on-scroll-down": "hyprctl dispatch workspace +1",
 		"format": "{name}",
 		"on-click": "activate",
-		//"format-icons": {
-		//"urgent": "",
-		//"default": "",
-		//"default": "󰧞",
-		//"sort-by-number": true,
 		"height": 0
 	},
 
