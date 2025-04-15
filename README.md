@@ -11,7 +11,7 @@ This repository contains a few basic configuration files I use for my Hyprland s
 
 - swaync
   
-![Image](https://github.com/user-attachments/assets/a456d703-9d88-4596-be90-cc7c98288933)
+![Image](https://github.com/user-attachments/assets/23b5b1ab-e8d1-460d-a1f0-13badb569246)
 # Dependencies
 - **System dependencies**: ```sudo pacman -Syu```
 
