@@ -39,7 +39,7 @@ This repository contains a few basic configuration files I use for my Hyprland s
   
 - **App launcher**: rofi-wayland
 
-- **Options menu kauncher**: wofi
+- **Options menu launcher**: wofi
   
 - **Browser**: firefox
   
