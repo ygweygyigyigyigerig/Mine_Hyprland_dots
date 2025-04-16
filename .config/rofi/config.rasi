@@ -1,1 +1,61 @@
 
+configuration {
+  display-drun: "";
+  drun-display-format: "{icon}{name}";
+  font: "JetBrainsMono Nerd Font Medium 12";
+  modi: "drun";
+  show-icons: false;
+} 
+
+@theme "mytheme.rasi"
+
+* {
+  border: 0;
+  border-radius: 8;
+  margin: 0;
+  padding: 2;
+}
+
+window {
+  width: 470px;
+  height: 350px;
+  background-color: #282a36;  
+}
+
+listview {
+  border: 0px;
+  spacing: 5px;
+  dynamic: true;
+  scrollbar: true;
+  scroll-method: 0; 
+  scroll-steps: 1;   
+}
+
+scrollbar {
+  width: 6px;
+  handle-width: 6px;
+  handle-color: #928374;
+  border: 0;
+}
+
+element {
+  padding: 4px 6px;
+  background-color: transparent;
+  text-color: #ebdbb2;
+}
+
+element selected.normal {
+  background-color: grey;
+  text-color: #ebdbb2;    
+  padding: 4px 6px;        
+}
+
+element selected.active {
+  background-color: grey; 
+  text-color: #fbf1c7;
+  padding: 4px 6px;         
+}
+
+* {
+  background-color: rgba(0, 0, 0, 0.2);
+}
