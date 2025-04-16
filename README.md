@@ -47,11 +47,11 @@ This repository contains a few basic configuration files I use for my Hyprland s
 
 - **File manager**: dolphin
 
-Commend to get all following dependencies: ```sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland ttf-font-awesome hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin```
+Commend to get all dependencies listed above: ```sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland ttf-font-awesome hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin```
 
 - **Notifications center**: swaync
   
-  **All swaync dependencies** : ```sudo pacman -S swaync vala meson blueprint-compiler git scdoc sassc gtk4 gtk4-layer-shell dbus glib2 gobject-introspection libgee json-glib libadwaita gvfs granite7```
+  **Commad to get swaync and alll swaync dependencies** : ```sudo pacman -S swaync vala meson blueprint-compiler git scdoc sassc gtk4 gtk4-layer-shell dbus glib2 gobject-introspection libgee json-glib libadwaita gvfs granite7```
 
 
 # Credits
