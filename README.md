@@ -37,7 +37,9 @@ This repository contains a few basic configuration files I use for my Hyprland s
   
 - **Status Bar**: waybar
   
-- **Launcher**: rofi-wayland
+- **App launcher**: rofi-wayland
+
+- **Options menu kauncher**: wofi
   
 - **Browser**: firefox
   
