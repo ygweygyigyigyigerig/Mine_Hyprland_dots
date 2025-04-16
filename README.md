@@ -59,11 +59,8 @@ Commend to get all dependencies listed above: ```sudo pacman -S networkmanager z
 I'd like to thank shdShadow for giving me base for waybar, which i modified. Here's link to his repo : 
 https://github.com/shdShadow/Hyprland-pokemon
 
-I'd like to thank George Lemanis aswell for giving me base for rofi. Here's link to his repo:
-https://github.com/dracula/rofi
-
-And also a big shoutout to BinaryHarbinger for the Swaync config I used for my rice.
-Here's link to his repo: https://github.com/BinaryHarbinger/Dotfiles
+I'd like to thank BinaryHarbinger aswell for giving me swaync config. Here's link to his repo:
+https://github.com/BinaryHarbinger/Dotfiles
 
 # Disclaimer
 This project is still under development.
