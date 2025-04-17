@@ -120,3 +120,13 @@ fi
 cp -r DOTFILES/.config/scripts ~/.config/
 echo "Copied ${bold}scripts${normal} directory from this repo to ${bold}~/.config/${normal} directory"
 
+cat << "BYE"
+ ____       _                 _                          _       
+/ ___|  ___| |_ _   _ _ __   (_)___   _ __ ___  __ _  __| |_   _ 
+\___ \ / _ \ __| | | | '_ \  | / __| | '__/ _ \/ _` |/ _` | | | |
+ ___) |  __/ |_| |_| | |_) | | \__ \ | | |  __/ (_| | (_| | |_| |
+|____/ \___|\__|\__,_| .__/  |_|___/ |_|  \___|\__,_|\__,_|\__, |
+                     |_|                                   |___/ 
+BYE
+echo "Everything should be ok for now, please report if smth went wrong."
+echo "Thank you for using this setup, have a great day!"
