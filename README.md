@@ -77,6 +77,32 @@ This repository contains a few basic configuration files I use for my Hyprland s
   
 **Commad to get swaync and alll swaync dependencies**: ```sudo pacman -S swaync vala meson blueprint-compiler git scdoc sassc gtk4 gtk4-layer-shell dbus glib2 gobject-introspection libgee json-glib libadwaita gvfs granite7```
 
+# Instalation process (BETA)
+I've made instalation and setup script with helep of Frogprog, in theory it worked fine in vm but we couldn't check effect since hyprland requiers gpu acceleration. All needed dircetories were created in right places and every content of config file was transported fine but suddenly as mentioned earlier we cant see efect, that's why installer is currently in beta state.
+
+**BE SURE TO GET ALL DEPENDENCIES BEFORE STARTING INSTALLATION**
+
+**1. Copy contents of installer.sh**
+
+**2. Creat file named installer.sh and paste copied contents**
+
+**3. Do chmod +x installer.sh and then ./installer.sh**
+
+**4. Wait for installation to end.**
+
+**5. Do whatever installer potentionally told you to**
+
+Congratulations ! now you installed dotfiles, it's time to place them where they should be !
+
+**6. Copy contents of setup.sh**
+
+**7. Creat file named setup.sh and paste copied contents**
+
+**8. Do chmod +x setup.sh and then ./setup.sh**
+
+**9. Follow setup script instructions**
+
+**10. Reboot**
 
 # Credits
 
