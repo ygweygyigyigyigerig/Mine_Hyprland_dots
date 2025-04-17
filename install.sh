@@ -65,7 +65,7 @@ if test -d ~/.config/hypr/; then
   fi
 fi
 
-cp -r DOTFILES/.config/hypr ~/.config/
+cp -r ~/.config/Mine_Hyprland_dots/DOTFILES/.config/hypr ~/.config/
 echo "Copied ${bold}hypr${normal} directory from this repo to ${bold}~/.config/${normal} directory"
 
 # installing waybar directory
@@ -78,7 +78,7 @@ if test -d ~/.config/waybar/; then
   fi
 fi
 
-cp -r DOTFILES/.config/waybar ~/.config/
+cp -r ~/.config/Mine_Hyprland_dots/DOTFILES/.config/waybar ~/.config/
 echo "Copied ${bold}waybar${normal} directory from this repo to ${bold}~/.config/${normal} directory"
 
 # installing swaync directory
@@ -91,7 +91,7 @@ if test -d ~/.config/swaync/; then
   fi
 fi
 
-cp -r DOTFILES/.config/swaync ~/.config/
+cp -r ~/.config/Mine_Hyprland_dots/DOTFILES/.config/swaync ~/.config/
 echo "Copied ${bold}swaync${normal} directory from this repo to ${bold}~/.config/${normal} directory"
 
 # installing rofi directory
@@ -104,20 +104,20 @@ if test -d ~/.config/rofi/; then
   fi
 fi
 
-cp -r DOTFILES/.config/rofi ~/.config/
+cp -r ~/.config/Mine_Hyprland_dots/DOTFILES/.config/rofi ~/.config/
 echo "Copied ${bold}rofi${normal} directory from this repo to ${bold}~/.config/${normal} directory"
 
 # installing scripts directory
 
 if test -d ~/.config/scripts/; then
   echo "Found ${bold}~/.config/scripts${normal} directory, copying contents of ${bold}scripts${normal} directory into ${bold}~/.config/scripts${normal} directory"
-  cp DOTFILES/.config/scripts/option_menu.sh ~/.config/scripts
+  cp ~/.config/Mine_Hyprland_dots/DOTFILES/.config/scripts/option_menu.sh ~/.config/scripts
    if [ $? -eq 0 ]; then
     echo "${bold}Done!"  
    fi
 fi
 
-cp -r DOTFILES/.config/scripts ~/.config/
+cp -r ~/.config/Mine_Hyprland_dots/DOTFILES/.config/scripts ~/.config/
 echo "Copied ${bold}scripts${normal} directory from this repo to ${bold}~/.config/${normal} directory"
 
 cat << "BYE"
