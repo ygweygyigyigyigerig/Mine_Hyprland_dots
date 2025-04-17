@@ -85,6 +85,7 @@ I've made instalation and setup script with helep of Frogprog,  it worked fine i
    ```curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/main/installer.sh```
    
    ```curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/main/setup.sh```
+   
 **2.Run installation and setup script**
 
 ```bash installer.sh```
