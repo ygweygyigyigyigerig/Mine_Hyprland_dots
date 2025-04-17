@@ -15,28 +15,20 @@ This repository contains a few basic configuration files I use for my Hyprland s
   
 ![Image](https://github.com/user-attachments/assets/828b07a4-6e2a-472d-ad90-9cd37e728b4b)
 
-# Shortcuts 
-```Mod + Return```	Launch terminal ($terminal)
-
-```Mod + Q```	Kill active window
-
-```Mod + M```	Exit Hyprland
-
-```Mod + E```	Launch file manager ($fileManager)
-
-```Mod + F```	Toggle floating mode
-
-```Mod + A```	Launch application menu ($menu)
-
-```Mod + B```	Launch browser ($browser)
-
-```Mod + P```	Toggle pseudo mode (dwindle)
-
-```Mod + J```	Toggle split layout (dwindle)
-
-```Mod + I```	Open custom option menu
-
-```Mod + PrintScreen``` Take screenshot
+# Shortcuts
+|keybind|result|
+|---|---|
+| ```Mod + Return``` |	Launch terminal ($terminal) |
+| ```Mod + Q```	| Kill active window |
+| ```Mod + M```	| Exit Hyprland |
+| ```Mod + E```	| Launch file manager ($fileManager) |
+| ```Mod + F```	| Toggle floating mode |
+| ```Mod + A```	| Launch application menu ($menu) |
+| ```Mod + B```	| Launch browser ($browser) |
+| ```Mod + P```	| Toggle pseudo mode (dwindle) |
+| ```Mod + J```	| Toggle split layout (dwindle) |
+| ```Mod + I``` |	Open custom option menu |
+| ```Mod + PrintScreen``` | Take screenshot |
 
 # Dependencies
 - **System dependencies**: ```sudo pacman -Syu```
