@@ -15,7 +15,7 @@ This repository contains a few basic configuration files I use for my Hyprland s
   
 ![Image](https://github.com/user-attachments/assets/828b07a4-6e2a-472d-ad90-9cd37e728b4b)
 
-# Shortcuits 
+# Shortcuts 
 ```Mod + Return```	Launch terminal ($terminal)
 
 ```Mod + Q```	Kill active window
