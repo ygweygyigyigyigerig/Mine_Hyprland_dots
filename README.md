@@ -86,9 +86,9 @@ I've made instalation and setup script with helep of Frogprog,  it worked fine i
 
 **1. Instal setup and installation script**
 
-   ```curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/install-script/installer.sh```
+   ```curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/development-branch/installer.sh```
    
-   ```curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/install-script/setup.sh```
+   ```curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/development-branch/setup.sh```
 **2.Run installation and setup script**
 
 ```bash installer.sh```
