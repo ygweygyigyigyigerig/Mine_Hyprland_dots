@@ -63,7 +63,11 @@ This repository contains a few basic configuration files I use for my Hyprland s
 
 - **File manager**: dolphin
 
+- **Screnshot software**: hypershot
+
 **Commend to get all dependencies listed above**: ```sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland ttf-font-awesome hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin```
+
+```yay -S hypershot```
 
 - **Notifications center**: swaync
   
@@ -78,9 +82,9 @@ I've made instalation and setup script with helep of Frogprog,  it worked fine i
 
 **1. Instal setup and installation script**
 
-   ```curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/install-script/installer.sh```
+   ```curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/main/installer.sh```
    
-   ```curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/install-script/setup.sh```
+   ```curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/main/setup.sh```
 **2.Run installation and setup script**
 
 ```bash installer.sh```
