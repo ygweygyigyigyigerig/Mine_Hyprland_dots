@@ -1,7 +1,31 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
-# greeting
+#================================================================
+#  Hyprland & Related Config Installer with Auto-Clone
+#================================================================
 
+# Formatting
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+#------------- Repo Configuration ------------#
+# Change this to your actual dotfiles repo URL
+REPO_URL="https://github.com/yourusername/Mine_Hyprland_dots.git"
+# Local clone destination
+INSTALL_DIR="${HOME}/.local/share/Mine_Hyprland_dots"
+
+# Clone repository if not already present
+if [[ ! -d "$INSTALL_DIR" ]]; then
+  echo "${bold}Cloning Hyprland dotfiles repository into $INSTALL_DIR...${normal}"
+  git clone "$REPO_URL" "$INSTALL_DIR"
+  echo "${bold}Clone complete.${normal}"
+fi
+
+# Use INSTALL_DIR as base for all operations
+SCRIPT_DIR="$INSTALL_DIR"
+
+#------------- Greeting Banner ------------#
 cat << "HI"
  ___           _        _ _           
 |_ _|_ __  ___| |_ __ _| | | ___ _ __ 
@@ -10,116 +34,51 @@ cat << "HI"
 |___|_| |_|___/\__\__,_|_|_|\___|_|   
 HI
 
-# variables for making text bold
+echo
 
-bold=$(tput bold)
-normal=$(tput sgr0)
-
-# asking if user wants to install configs
-
+#------------- User Prompt ------------#
 while true; do
-  read -p "${bold}DO YOU WANT TO START THE INSTALLATION NOW?${normal} (Yy/Nn): " yn
-  case $yn in
-  [Yy]*)
-    echo ":: Installation started."
-    echo
-    break
-   ;;
-  [Nn]*)
-    echo ":: Installation canceled"
-    exit
-    break
-   ;;
-  *)
-    echo ":: Please answer yes or no."
-    ;;
+  read -rp "${bold}START INSTALLATION? (Y/N)${normal} " yn
+  case "${yn,,}" in
+    y|yes) echo ":: Installation started."; echo; break ;;
+    n|no)  echo ":: Installation canceled."; exit 0 ;;
+    *)     echo ":: Please answer Y or N." ;;
   esac
 done
 
-# checking if .config directory exists
+#------------- Ensure ~/.config Exists ------------#
+echo "Ensuring ${bold}~/.config${normal} exists..."
+mkdir -p "$HOME/.config"
 
-echo "Searching for ${bold}~/.config${normal} directory..."
+declare -a apps=(hypr waybar swaync rofi scripts)
 
-if test ! -d ~/.config/; then
-  echo "Did not find ${bold}~/.config${normal} directory, creating..."
-  mkdir ~/.config/
+for app in "${apps[@]}"; do
+  SRC="$SCRIPT_DIR/DOTFILES/.config/$app"
+  DEST="$HOME/.config/$app"
 
-  if [ $? -eq 0 ]; then
-    echo "Created ${bold}~/.config/${normal} directory!"
-  else
-    echo "Could not create ${bold}~/.config/${normal} directory :("
+  # Verify source exists
+  if [[ ! -e "$SRC" ]]; then
+    echo "Error: Source '$SRC' not found. Aborting." >&2
     exit 1
   fi
-else
-  echo "Found ${bold}~/.config${normal} directory"
-fi
 
-
-# installing hypr directory
-
-if test -d ~/.config/hypr/; then
-  echo "Found ${bold}~/.config/hypr${normal} directory, backuping it into ${bold}~/.config/hypr-backup..."
-  mv ~/.config/hypr/ ~/.config/hypr-backup
-   if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bold}~/.config/hypr-backup${normal} directory"
+  # Backup if destination exists
+  if [[ -e "$DEST" ]]; then
+    ts=$(date '+%Y%m%d-%H%M%S')
+    BAK="$HOME/.config/${app}-backup-$ts"
+    echo "Backing up existing '$app' to '$BAK'..."
+    mv "$DEST" "$BAK"
+    echo "  → Backup complete: $BAK"
   fi
-fi
 
-cp -r ~/.config/Mine_Hyprland_dots/DOTFILES/.config/hypr ~/.config/
-echo "Copied ${bold}hypr${normal} directory from this repo to ${bold}~/.config/${normal} directory"
+  # Create destination and copy
+  echo "Installing '$app' configs..."
+  mkdir -p "$DEST"
+  cp -rv "$SRC"/. "$DEST"/
+  echo "  → '$app' installed successfully."
+done
 
-# installing waybar directory
-
-if test -d ~/.config/waybar/; then
-  echo "Found ${bold}~/.config/waybar${normal} directory, backuping it into ${bold}~/.config/waybar-backup..."
-  mv ~/.config/waybar/ ~/.config/waybar-backup
-   if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bold}~/.config/waybar-backup${normal} directory"
-  fi
-fi
-
-cp -r ~/.config/Mine_Hyprland_dots/DOTFILES/.config/waybar ~/.config/
-echo "Copied ${bold}waybar${normal} directory from this repo to ${bold}~/.config/${normal} directory"
-
-# installing swaync directory
-
-if test -d ~/.config/swaync/; then
-  echo "Found ${bold}~/.config/swaync${normal} directory, backuping it into ${bold}~/.config/swaync-backup..."
-  mv ~/.config/swaync/ ~/.config/swaync-backup
-   if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bold}~/.config/swaync-backup${normal} directory"
-  fi
-fi
-
-cp -r ~/.config/Mine_Hyprland_dots/DOTFILES/.config/swaync ~/.config/
-echo "Copied ${bold}swaync${normal} directory from this repo to ${bold}~/.config/${normal} directory"
-
-# installing rofi directory
-
-if test -d ~/.config/rofi/; then
-  echo "Found ${bold}~/.config/rofi${normal} directory, backuping it into ${bold}~/.config/rofi-backup..."
-  mv ~/.config/rofi/ ~/.config/rofi-backup
-   if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bold}~/.config/rofi-backup${normal} directory"
-  fi
-fi
-
-cp -r ~/.config/Mine_Hyprland_dots/DOTFILES/.config/rofi ~/.config/
-echo "Copied ${bold}rofi${normal} directory from this repo to ${bold}~/.config/${normal} directory"
-
-# installing scripts directory
-
-if test -d ~/.config/scripts/; then
-  echo "Found ${bold}~/.config/scripts${normal} directory, copying contents of ${bold}scripts${normal} directory into ${bold}~/.config/scripts${normal} directory"
-  cp ~/.config/Mine_Hyprland_dots/DOTFILES/.config/scripts/option_menu.sh ~/.config/scripts
-   if [ $? -eq 0 ]; then
-    echo "${bold}Done!"  
-   fi
-fi
-
-cp -r ~/.config/Mine_Hyprland_dots/DOTFILES/.config/scripts ~/.config/
-echo "Copied ${bold}scripts${normal} directory from this repo to ${bold}~/.config/${normal} directory"
-
+#------------- Farewell Banner ------------#
 cat << "BYE"
  ____       _                 _                          _       
 / ___|  ___| |_ _   _ _ __   (_)___   _ __ ___  __ _  __| |_   _ 
@@ -128,5 +87,6 @@ cat << "BYE"
 |____/ \___|\__|\__,_| .__/  |_|___/ |_|  \___|\__,_|\__,_|\__, |
                      |_|                                   |___/ 
 BYE
-echo "Everything should be ok for now, please report if smth went wrong."
-echo "Thank you for using this setup, have a great day!"
+
+echo "Setup complete! If anything went wrong, check backups in ~/.config/*-backup-* or report an issue."
+
