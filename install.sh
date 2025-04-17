@@ -57,13 +57,13 @@ for app in "${apps[@]}"; do
   DEST="$HOME/.config/$app"
 
   # Verify source exists
-  if [[ ! -e "$SRC" ]]; then
-    echo "Error: Source '$SRC' not found. Aborting." >&2
+  if [[ ! -d "$SRC" ]]; then
+    echo "Error: Source directory '$SRC' not found. Aborting." >&2
     exit 1
   fi
 
   # Backup if destination exists
-  if [[ -e "$DEST" ]]; then
+  if [[ -d "$DEST" ]]; then
     ts=$(date '+%Y%m%d-%H%M%S')
     BAK="$HOME/.config/${app}-backup-$ts"
     echo "Backing up existing '$app' to '$BAK'..."
@@ -89,4 +89,3 @@ cat << "BYE"
 BYE
 
 echo "Setup complete! If anything went wrong, check backups in ~/.config/*-backup-* or report an issue."
-
