@@ -82,28 +82,25 @@ I've made instalation and setup script with helep of Frogprog, in theory it work
 
 **BE SURE TO GET ALL DEPENDENCIES BEFORE STARTING INSTALLATION**
 
-**1. Copy contents of installer.sh**
 
-**2. Creat file named installer.sh and paste copied contents**
 
-**3. Do chmod +x installer.sh and then ./installer.sh**
+**1. Instal setup and installation script**
 
-**4. Wait for installation to end.**
+   ```curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/install-script/installer.sh```
+   
+   ```curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/install-script/setup.sh```
+**2.Run installation and setup script**
 
-**5. Do whatever installer potentionally told you to**
+```bash installer.sh```
 
-Congratulations ! now you installed dotfiles, it's time to place them where they should be !
+```bash setup.sh```
 
-**6. Copy contents of setup.sh**
+**3. Wait for installation to end.**
 
-**7. Creat file named setup.sh and paste copied contents**
+**4. Do whatever installer potentionally told you to**
 
-**8. Do chmod +x setup.sh and then ./setup.sh**
-
-**9. Follow setup script instructions**
-
-**10. Reboot**
-
+**5. Reboot**
+Congratulation ! you've just installed your new shiny dotfiles.
 # Credits
 
 I'd like to thank shdShadow for giving me base for waybar, which i modified. Here's link to his repo : 
