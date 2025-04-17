@@ -21,7 +21,8 @@
 		"custom/space",
 		"custom/poweroff",
 		"custom/reboot",
-		"custom/lock"
+		"custom/lock",
+		"custom/swaync"
 	],
 	"hyprland/workspaces": {
 		"active-only": false,
@@ -85,6 +86,12 @@
   		"interval": 3600
 },
 
+	"custom/swaync": {
+		"format": "",
+    		"tooltip": "notification center",
+		"on-click": "swaync-client -t -sw",
+  		"interval": 3600
+},
 	"network#net2": {
 		"interval": 5,
 		"interface": "enp7s0",
@@ -129,4 +136,5 @@
 		"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- -l 2.0"
 	},
 
+}
 }
