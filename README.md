@@ -62,7 +62,7 @@ https://github.com/shdShadow/Hyprland-pokemon
 I'd like to thank BinaryHarbinger aswell for giving me swaync config. Here's link to his repo:
 https://github.com/BinaryHarbinger/Dotfiles
 
-And finally, a big shoutout to the co-developer and contributor, FrogProg09
+And finally, a big shoutout to the co-developer and contributor, FrogProg09 that brings a lot into repo !
 
 # Disclaimer
 This project is still under development.
