@@ -107,11 +107,11 @@ My nick is at [disclaimer](#Disclaimer) section.
 **1. Instal setup and installation script**
 
   ```bash
-    curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/development-branch/installer.sh
+    curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/main/installer.sh
   ```
    
   ```bash
-    curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/development-branch/setup.sh
+    curl -L -O https://raw.githubusercontent.com/ygweygyigyigyigerig/Mine_Hyprland_dots/main/setup.sh
   ```
 **2.Run installation and setup script**
 
