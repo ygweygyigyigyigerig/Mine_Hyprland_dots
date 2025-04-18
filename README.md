@@ -97,6 +97,7 @@ I've made instalation and setup script with helep of Frogprog,  it worked fine i
 **4. Do whatever installer potentionally told you to**
 
 **5. Reboot**
+
 Congratulation ! you've just installed your new shiny dotfiles.
 # Credits
 
