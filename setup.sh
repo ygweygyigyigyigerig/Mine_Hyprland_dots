@@ -64,5 +64,5 @@ HI
 echo "Your configs live in ~/.config/{${apps[*]}}"
 echo "Old versions (if any) backed up as *-backup-<timestamp>."
 echo "To configure the Waybar network module, run:"
-echo "  bash $HOME/dotfiles/scripts/set_waybar_iface.sh"
+echo "bash ~/.config/scripts/set_waybar_iface.sh"
 echo "After you do run command above log out (mainMod + M) and log back in"
