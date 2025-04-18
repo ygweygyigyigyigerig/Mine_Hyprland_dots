@@ -94,6 +94,6 @@ cat << "HI"
 \__ \ |_| | (_|  __/  _| |_| | | | |_| |
 |___/\__,_|\___\___|_|  \__,_|_|_|\__, |
                                   |___/ 
-"HI"
+HI
 echo "Configs installed under ~/.config/{${apps[*]}}"
 echo "Review and tweak as needed."
