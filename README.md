@@ -1,17 +1,16 @@
 # Mine Hyprland dots
-This repository contains a few basic configuration files I use for my Hyprland setup. These configs include:
+This repository contains a few basic configuration files I use for my Hyprland setup. Here's list of them : 
 
-- rofi
+## Things that are used in setup
 
-- waybar
-
-- hyprpaper
-
-- hyprlock
-
-- swaync
-
-- zsh (config will be uploaded in future) 
+| System part | Name |
+| --- | --- |
+| Compositor | [Hyprland 🌌](https://github.com/hyprwm/Hyprland) |
+| Bar | [Waybar 🎑](https://github.com/Alexays/Waybar) |
+| App launcher | [Rofi 🚀](https://github.com/davatorium/rofi) |
+| Notifications | [Swaync ⚠️](https://github.com/ErikReider/SwayNotificationCenter) |
+| Lock | [Hyprlock 🔒](https://github.com/hyprwm/hyprlock) |
+| Shell | [Zsh 🐚](https://zsh.sourceforge.io/) (in progress) |
   
 ![Image](https://github.com/user-attachments/assets/828b07a4-6e2a-472d-ad90-9cd37e728b4b)
 
