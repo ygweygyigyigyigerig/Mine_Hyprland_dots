@@ -2,7 +2,7 @@
   <img alt="Profiles Pictures" src="https://github.com/user-attachments/assets/c5663bff-358e-4727-99c2-6345eea5c2bd" width="200" height="200"/>
 </div>
 <div align="center">
-    <h1> My Hyprland Dotfiles</h1>
+    <h1> Simons's Hyprland Dotfiles</h1>
     <h4> This repository contains a few basic configuration files I use for my Hyprland setup.</h4>
 </div>
 </div>
