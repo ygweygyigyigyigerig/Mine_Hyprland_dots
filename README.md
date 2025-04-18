@@ -18,10 +18,15 @@
 | Lock | [Hyprlock 🔒](https://github.com/hyprwm/hyprlock) |
 | Shell | [Zsh 🐚](https://zsh.sourceforge.io/) (in progress) |
 
+
 ![Image](https://github.com/user-attachments/assets/14592c27-97dd-41dd-9a58-15c50e4b0b11)
+
+> Plain desktop with no apps running
+
 
 ![Image](https://github.com/user-attachments/assets/828b07a4-6e2a-472d-ad90-9cd37e728b4b)
 
+> Desktop with rofi and swaync open
 # Shortcuts 
 
 |keybind|result|
