@@ -19,10 +19,6 @@
 | Shell | [Zsh 🐚](https://zsh.sourceforge.io/) (in progress) |
 
 
-![Image](https://github.com/user-attachments/assets/14592c27-97dd-41dd-9a58-15c50e4b0b11)
-
-> Plain desktop with no apps running
-
 
 ![Image](https://github.com/user-attachments/assets/828b07a4-6e2a-472d-ad90-9cd37e728b4b)
 
@@ -134,11 +130,6 @@ My nick is at [disclaimer](#Disclaimer) section.
 
 Congratulation ! you've just installed your new shiny dotfiles.
 
-# Screenshots
-
-![Image](https://github.com/user-attachments/assets/9768bb6a-173f-44aa-adcc-f9c649f1e805)
-
-![Image](https://github.com/user-attachments/assets/254ff399-42e6-4611-a782-a45118a52336)
 
 # Credits
 
