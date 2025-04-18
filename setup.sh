@@ -47,7 +47,18 @@ for app in "${apps[@]}"; do
   mkdir -p "$DEST"
   cp -r "$SRC"/. "$DEST"/
 done
-echo "Setup was succesfull"
+echo " ____       _                                   
+/ ___|  ___| |_ _   _ _ __   __      ____ _ ___ 
+\___ \ / _ \ __| | | | '_ \  \ \ /\ / / _` / __|
+ ___) |  __/ |_| |_| | |_) |  \ V  V / (_| \__ \
+|____/ \___|\__|\__,_| .__/    \_/\_/ \__,_|___/
+                     |_|                        
+                     __       _ _       
+ ___ _   _  ___ ___ / _|_   _| | |_   _ 
+/ __| | | |/ __/ _ \ |_| | | | | | | | |
+\__ \ |_| | (_|  __/  _| |_| | | | |_| |
+|___/\__,_|\___\___|_|  \__,_|_|_|\__, |
+                                  |___/ "
 echo "Your configs live in ~/.config/{${apps[*]}}"
 echo "Old versions (if any) backed up as *-backup-<timestamp>."
 
