@@ -48,7 +48,6 @@ for app in "${apps[@]}"; do
   cp -r "$SRC"/. "$DEST"/
 done
 
-echo
 echo " 
 ____       _                                   
 / ___|  ___| |_ _   _ _ __   __      ____ _ ___ 
@@ -62,7 +61,8 @@ ____       _
 \__ \ |_| | (_|  __/  _| |_| | | | |_| |
 |___/\__,_|\___\___|_|  \__,_|_|_|\__, |
                                   |___/ 
-                                  "
+"                                  
+
 echo "Your configs live in ~/.config/{${apps[*]}}"
 echo "Old versions (if any) backed up as *-backup-<timestamp>."
 
