@@ -39,6 +39,42 @@
 
 # Dependencies
 
+- **System dependencies**: ```sudo pacman -Syu```
+
+- **Netwrok**: networkmanager
+
+- **Shell**: zsh (config will be uploaded in future)
+
+- **Audio**: pulseaudio
+
+- **Bluetooth**: bluez and bluez-utils
+
+- **Qt based software support**: qt6-wayland and qt5-wayland
+  
+- **Fonts**: ttf-font-awesome
+
+- **Lock screen**: hyprlock
+
+- **Wallpaper managing**: hyprpaper
+  
+- **Window Manager**: hyprland
+  
+- **Status Bar**: waybar
+  
+- **App launcher**: rofi-wayland
+
+- **Options menu launcher**: wofi
+  
+- **Browser**: firefox
+  
+- **Terminal**: kitty
+
+- **File manager**: dolphin
+
+- **Screnshot software**: hypershot
+
+- **Notification center**: swaync
+
 There are a few dependencies that you can install with commands below:
 
 1. Can be installed with pacman
