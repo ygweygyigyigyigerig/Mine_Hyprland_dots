@@ -59,9 +59,7 @@ ____       _
  ___ _   _  ___ ___ / _|_   _| | | 
 / __| | | |/ __/ _ \ |_| | | | | |
 \__ \ |_| | (_|  __/  _| |_| | | |
-|___/\__,_|\___\___|_|  \__,_|_|_|
-                                  
-"                                  
+|___/\__,_|\___\___|_|  \__,_|_|_| "                                
 
 echo "Your configs live in ~/.config/{${apps[*]}}"
 echo "Old versions (if any) backed up as *-backup-<timestamp>."
