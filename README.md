@@ -17,9 +17,12 @@
 | Notifications | [Swaync ⚠️](https://github.com/ErikReider/SwayNotificationCenter) |
 | Lock | [Hyprlock 🔒](https://github.com/hyprwm/hyprlock) |
 | Shell | [Zsh 🐚](https://zsh.sourceforge.io/) (in progress) |
-  
+
+
+
 ![Image](https://github.com/user-attachments/assets/828b07a4-6e2a-472d-ad90-9cd37e728b4b)
 
+> Desktop with rofi and swaync open
 # Shortcuts 
 
 |keybind|result|
@@ -127,7 +130,6 @@ My nick is at [disclaimer](#Disclaimer) section.
 
 Congratulation ! you've just installed your new shiny dotfiles.
 
-# Screenshots
 
 # Credits
 
@@ -141,5 +143,7 @@ Congratulation ! you've just installed your new shiny dotfiles.
 This project is still under development.
 Some configurations may not work (beacaucse I could paste them wrongly) or It could miss few dependencies (since knowing my self there's vey high chance I forgot about them), and changes will be made over time. 
 If you encounter any issues, feel free to DM me on discord, and I'll do my best to assist.
+
+My Discord user name is : szymonschabiak
 
 My Discord user name is : szymonschabiak
