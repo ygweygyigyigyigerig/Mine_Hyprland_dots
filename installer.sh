@@ -6,14 +6,47 @@ trap 'echo "Error on line $LINENO"; exit 1' ERR
 REPO_URL="https://github.com/ygweygyigyigyigerig/Mine_Hyprland_dots.git"
 INSTALL_DIR="$HOME/.local/share/Mine_Hyprland_dots"
 DOTFILES_DIR="$INSTALL_DIR/DOTFILES/.config"
-BRANCH="${1:-main}"   # pass branch/tag as first argument, defaults to 'main'
+
+#----------------- Check Dependencies -----------------#
+for cmd in git curl jq rsync; do
+  if ! command -v "$cmd" &> /dev/null; then
+    echo "Error: '$cmd' is required but not installed. Please install it first." >&2
+    exit 1
+  fi
+done
+
+#----------------- Choose Installation Type -----------------#
+echo "Select installation type:"
+echo "  1) Stable (latest GitHub release)"
+echo "  2) Bleeding-edge (latest commits on 'main')"
+read -rp "Enter choice [1/2]: " choice
+case "$choice" in
+  1)
+    echo "Fetching latest release tag..."
+    LATEST_TAG=$(curl -s https://api.github.com/repos/ygweygyigyigyigerig/Mine_Hyprland_dots/releases/latest \
+      | jq -r .tag_name)
+    if [[ -z "$LATEST_TAG" || "$LATEST_TAG" == "null" ]]; then
+      echo "Error: Unable to retrieve latest release. Exiting." >&2
+      exit 1
+    fi
+    BRANCH="$LATEST_TAG"
+    echo "Selected stable release: $BRANCH"
+    ;;
+  2)
+    BRANCH="main"
+    echo "Selected bleeding-edge branch: $BRANCH"
+    ;;
+  *)
+    echo "Invalid choice. Exiting." >&2
+    exit 1
+    ;;
+esac
 
 #----------------- Remove Existing Repo Safely -----------------#
 if [[ -d "$INSTALL_DIR" ]]; then
   echo "Found existing repo at $INSTALL_DIR."
-  read -p "Delete and re‑clone? [y/N] " yn
+  read -rp "Delete and re‑clone? [y/N] " yn
   if [[ "$yn" =~ ^[Yy]$ ]]; then
-    # safety check on INSTALL_DIR
     if [[ "$INSTALL_DIR" == "$HOME/.local/share/Mine_Hyprland_dots" ]]; then
       echo "Deleting $INSTALL_DIR..."
       rm -rf "$INSTALL_DIR"
@@ -22,7 +55,7 @@ if [[ -d "$INSTALL_DIR" ]]; then
       exit 1
     fi
   else
-    echo "Skipping delete; will exit to avoid stale repo." && exit 0
+    echo "Skipping delete; exiting to avoid stale repo." && exit 0
   fi
 fi
 
