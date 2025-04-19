@@ -74,4 +74,6 @@ echo
 echo "${bold}Setup complete!${normal}"
 echo "Your configs live in ~/.config/{${apps[*]}}"
 echo "Old versions (if any) backed up as *-backup-<timestamp>."
+echo "run following commend to chose which network interface to use for waybar module"
+echo "bash ~/.config/scripts/set_waybar_iface.sh" 
 chmod +x ~/.config/scripts/wlogout.sh
