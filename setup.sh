@@ -31,7 +31,7 @@ fi
 echo "${bold}Starting setup of Hyprland dotfiles...${normal}"
 
 # List of sub‑folders in .config to install
-declare -a apps=(hypr waybar swaync rofi scripts)
+declare -a apps=(hypr waybar swaync rofi scripts kitty wlogout)
 
 for app in "${apps[@]}"; do
   SRC="$DOTFILES_DIR/$app"
@@ -74,3 +74,4 @@ echo
 echo "${bold}Setup complete!${normal}"
 echo "Your configs live in ~/.config/{${apps[*]}}"
 echo "Old versions (if any) backed up as *-backup-<timestamp>."
+
