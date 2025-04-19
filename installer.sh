@@ -67,7 +67,7 @@ if [[ ! -d "$DOTFILES_DIR" ]]; then
 fi
 
 # Create ~/.config dirs and sync
-declare -a apps=(hypr waybar swaync rofi scripts kitty)
+declare -a apps=(hypr waybar swaync rofi scripts kitty wlogout)
 echo "Syncing dotfiles to ~/.config/..."
 for app in "${apps[@]}"; do
   SRC="$DOTFILES_DIR/$app/"
