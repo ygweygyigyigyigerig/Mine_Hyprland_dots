@@ -74,4 +74,4 @@ echo
 echo "${bold}Setup complete!${normal}"
 echo "Your configs live in ~/.config/{${apps[*]}}"
 echo "Old versions (if any) backed up as *-backup-<timestamp>."
-
+chmod +x ~/.config/scripts/wlogout.sh
