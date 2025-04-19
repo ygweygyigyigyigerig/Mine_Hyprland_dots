@@ -36,7 +36,7 @@
 | ```Mod + B```	| Launch browser ($browser) |
 | ```Mod + P```	| Toggle pseudo mode (dwindle) |
 | ```Mod + J```	| Toggle split layout (dwindle) |
-| ```Mod + I``` |	Open power option menu |
+| ```Mod + W``` |	Open power option menu |
 | ```Mod + PrintScreen``` | Take screenshot |
 
 
