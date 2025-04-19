@@ -1,37 +1,49 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
 
-{
-    "label" : "lock",
-    "action" : "loginctl lock-session",
-    "text" : "Lock",
-    "keybind" : "l"
+window {
+	background-color: rgba(12, 12, 12, 0.9);
 }
-{
-    "label" : "hibernate",
-    "action" : "systemctl hibernate",
-    "text" : "Hibernate",
-    "keybind" : "h"
+
+button {
+    border-radius: 0;
+    border-color: black;
+	text-decoration-color: #FFFFFF;
+    color: #FFFFFF;
+	background-color: #1E1E1E;
+	border-style: solid;
+	border-width: 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
 }
-{
-    "label" : "logout",
-    "action" : "loginctl terminate-user $USER",
-    "text" : "Logout",
-    "keybind" : "e"
+
+button:active, button:hover {
+	background-color: #646464;
+	outline-style: none;
 }
-{
-    "label" : "shutdown",
-    "action" : "systemctl poweroff",
-    "text" : "Shutdown",
-    "keybind" : "s"
+#lock {
+    background-image: image(url("icons/lock.png"));
 }
-{
-    "label" : "suspend",
-    "action" : "systemctl suspend",
-    "text" : "Suspend",
-    "keybind" : "u"
+
+#logout {
+    background-image: image(url("icons/logout.png"));
 }
-{
-    "label" : "reboot",
-    "action" : "systemctl reboot",
-    "text" : "Reboot",
-    "keybind" : "r"
+
+#suspend {
+    background-image: image(url("icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("icons/reboot.png"));
 }
