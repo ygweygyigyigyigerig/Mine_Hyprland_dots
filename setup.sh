@@ -66,3 +66,4 @@ echo "Old versions (if any) backed up as *-backup-<timestamp>."
 echo "To configure the Waybar network module, run:"
 echo "bash ~/.config/scripts/set_waybar_iface.sh"
 echo "After you do run command above log out (mainMod + M) and log back in"
+chmod +x ~/.config/scripts/wlogout.sh
