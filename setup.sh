@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
+#fancy title
+cat << "HI"
+____       _
+/ ___|  ___| |_ _   _ _ __
+\___ \ / _ \ __| | | | '_ \
+___) |  __/ |_| |_| | |_) |
+|____/ \___|\__|\__,_| .__/
+                    |_|
+HI
 set -euo pipefail
 
 #================================================================
@@ -47,23 +56,22 @@ for app in "${apps[@]}"; do
   mkdir -p "$DEST"
   cp -r "$SRC"/. "$DEST"/
 done
-cat << "HI"
-____       _                                   
-/ ___|  ___| |_ _   _ _ __   __      ____ _ ___ 
+
+cat << "BYE-SETUP"
+ ____       _
+/ ___|  ___| |_ _   _ _ __   __      ____ _ ___
 \___ \ / _ \ __| | | | '_ \  \ \ /\ / / _` / __|
  ___) |  __/ |_| |_| | |_) |  \ V  V / (_| \__ \
 |____/ \___|\__|\__,_| .__/    \_/\_/ \__,_|___/
-                     |_|                        
-                     __       _ _       
- ___ _   _  ___ ___ / _|_   _| | |
-/ __| | | |/ __/ _ \ |_| | | | | | 
-\__ \ |_| | (_|  __/  _| |_| | | | 
-|___/\__,_|\___\___|_|  \__,_|_|_|
-                                  
-HI
+                     |_|
+                                  __       _
+ ___ _   _  ___ ___ ___  ___ ___ / _|_   _| |
+/ __| | | |/ __/ __/ _ \/ __/ __| |_| | | | |
+\__ \ |_| | (_| (_|  __/\__ \__ \  _| |_| | |
+|___/\__,_|\___\___\___||___/___/_|  \__,_|_|
+BYE-SETUP
+echo
+echo "${bold}Setup complete!${normal}"
 echo "Your configs live in ~/.config/{${apps[*]}}"
 echo "Old versions (if any) backed up as *-backup-<timestamp>."
-echo "To configure the Waybar network module, run:"
-echo "bash ~/.config/scripts/set_waybar_iface.sh"
-echo "After you do run command above log out (mainMod + M) and log back in"
-chmod +x ~/.config/scripts/wlogout.sh
+

@@ -1,4 +1,14 @@
 #!/usr/bin/env bash
+
+# fancy title
+cat << "HI"
+ ___           _        _ _
+|_ _|_ __  ___| |_ __ _| | |
+ | || '_ \/ __| __/ _` | | |
+ | || | | \__ \ || (_| | | |
+|___|_| |_|___/\__\__,_|_|_|
+HI
+
 set -euo pipefail
 trap 'echo "Error on line $LINENO"; exit 1' ERR
 
@@ -80,6 +90,10 @@ for app in "${apps[@]}"; do
     echo "Warning: '$SRC' missing; skipping."
   fi
 done
+
+
+#----------------- Final Message -----------------#
+
 cat << "BYE-DOTFILES"
  ____        _    __ _ _             _           _        _ _          _ 
 |  _ \  ___ | |_ / _(_) | ___  ___  (_)_ __  ___| |_ __ _| | | ___  __| |
