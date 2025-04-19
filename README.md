@@ -36,7 +36,7 @@
 | ```Mod + B```	| Launch browser ($browser) |
 | ```Mod + P```	| Toggle pseudo mode (dwindle) |
 | ```Mod + J```	| Toggle split layout (dwindle) |
-| ```Mod + I``` |	Open custom option menu |
+| ```Mod + I``` |	Open power option menu |
 | ```Mod + PrintScreen``` | Take screenshot |
 
 
@@ -66,7 +66,7 @@
   
 - **App launcher**: rofi-wayland
 
-- **Options menu launcher**: wofi
+- **Power option menu**: wlogout
   
 - **Browser**: firefox
   
@@ -86,7 +86,7 @@ sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-w
 ```
 2. Can be installed with yay
 ```bash
-yay -S hyprlock
+yay -S hyprlock wlogout
 ```
 There are also a few dependencies for notification center **swaync**:
 ```bash
