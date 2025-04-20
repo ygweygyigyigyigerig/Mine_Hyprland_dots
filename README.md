@@ -17,8 +17,8 @@
 | Notifications | [Swaync ⚠️](https://github.com/ErikReider/SwayNotificationCenter) |
 | Lock | [Hyprlock 🔒](https://github.com/hyprwm/hyprlock) |
 | Shell | [Zsh 🐚](https://zsh.sourceforge.io/) (in progress) |
-
-
+| Terminal | [Kitty 🐱](https://github.com/kovidgoyal/kitty) |
+| Power menu | [Wlogout ⏻](https://github.com/ArtsyMacaw/wlogout) |
 
 ![Image](https://github.com/user-attachments/assets/828b07a4-6e2a-472d-ad90-9cd37e728b4b)
 
