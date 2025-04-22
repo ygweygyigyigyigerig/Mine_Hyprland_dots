@@ -54,7 +54,7 @@
 
 - **Qt based software support**: qt6-wayland and qt5-wayland
   
-- **Fonts**: ttf-font-awesome
+- **Fonts**: ttf-jetbrains-mono-nerd
 
 - **Lock screen**: hyprlock
 
@@ -82,7 +82,7 @@ There are a few dependencies that you can install with commands below:
 
 1. Can be installed with pacman
 ```bash
-sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland ttf-font-awesome hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl
+sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland ttf-jetbrains-mono-nerd hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl
 ```
 2. Can be installed with yay
 ```bash
