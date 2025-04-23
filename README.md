@@ -120,14 +120,13 @@ My nick is at [disclaimer](#Disclaimer) section.
   bash setup.sh
 ```
 
-**3. Wait for installation to end.**
+**3. Wait for installation to end**
 
 **4. Do whatever installer potentionally told you to**
 
 **5. Reboot**
 
-Congratulation ! you've just installed your new shiny dotfiles.
-
+Congratulation ! You've just installed your new shiny dotfiles.
 
 # Credits
 
