@@ -94,9 +94,6 @@ sudo pacman -S swaync vala meson blueprint-compiler git scdoc sassc gtk4 gtk4-la
 ```
 
 # Instalation process (works only for arch and arch based distros)
-I've made instalation and setup script with help of [Frogprog](https://github.com/FrogProg09). I've tested it in vm and on bare metal (my pc). 
-Everyting seemed to work fine, but as coding rule says: "if code works on your machine it doesn't mean it have to on somone's other". 
-
 If everything worked, or didn't work at all, either way please contact me in discord.
 My nick is at [disclaimer](#Disclaimer) section.
 
