@@ -78,7 +78,7 @@
 
 - **Notification center**: swaync
 
-There are a few dependencies that you can install with commands below:
+You can install all dependencies with commands below:
 
 1. Can be installed with pacman
 ```bash
