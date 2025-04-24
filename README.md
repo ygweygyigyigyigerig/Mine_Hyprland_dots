@@ -80,11 +80,11 @@
 
 You can install all dependencies with commands below:
 
-1. Can be installed with pacman
+1. Packages that can be installed with pacman
 ```bash
 sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland ttf-jetbrains-mono-nerd hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl
 ```
-2. Can be installed with yay
+2. Packages that can be installed with yay
 ```bash
 yay -S hyprlock wlogout
 ```
