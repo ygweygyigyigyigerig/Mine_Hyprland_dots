@@ -1,4 +1,4 @@
-/* THIS IS MODIFIED VERSION OF https://github.com/shdShadow/Hyprland-pokemon WAYBAR DOTFILES */
+
 * {
 	padding: 0;
 	margin: 0;
@@ -92,4 +92,15 @@
 }
 #custom-swaync {
 	margin-right: 10px
+}
+#custom-network-gui {
+          background-color: #2b2a2a;
+          border: 1px solid #2b2a2a;
+          border-radius: 10px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          margin-left: 8px;
+          padding-left: 6px;
+          padding-right: 6px;
+	   margin-left: 10px;
 }
