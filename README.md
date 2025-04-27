@@ -80,11 +80,11 @@
 
 You can install all dependencies with commands below:
 
-1. Can be installed with pacman
+1. Packages that can be installed with pacman
 ```bash
 sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland ttf-jetbrains-mono-nerd hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl
 ```
-2. Can be installed with yay
+2. Packages that can be installed with yay
 ```bash
 yay -S hyprlock wlogout
 ```
@@ -138,7 +138,7 @@ Congratulation ! You've just installed your new shiny dotfiles.
 
 # Disclaimer
 This project is still under development.
-Some configurations may not work (beacaucse I could paste them wrongly) or It could miss few dependencies (since knowing my self there's vey high chance I forgot about them), and changes will be made over time. 
+Some configurations may not work (beacaucse I could paste them wrongly) or It could miss few dependencies (since knowing my self there's vey high chance I forgot about them) there's also (not as big tho) chance of installe/setup script breaking, and changes will be made over time. 
 If you encounter any issues, feel free to DM me on discord, and I'll do my best to assist.
 
 My Discord user name is : szymonschabiak
