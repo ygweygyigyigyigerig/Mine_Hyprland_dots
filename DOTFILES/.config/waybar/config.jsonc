@@ -6,7 +6,8 @@
 	"modules-left": [
 		"network",
 		"custom/void",
-		"network#net2"
+		"network#net2",
+		"custom/network-gui"
 	],
 	"modules-center": [
 		"hyprland/workspaces"
@@ -62,8 +63,17 @@
 		]
 	},
 
+		
+		"custom/network-gui": {
+                  "format": "",
+                  "tooltip": "Network manager",
+                  "on-click": "nm-connection-editor",
+                  "interval": 3600
+},		
 
-	"custom/poweroff": {
+
+
+		"custom/poweroff": {
 		"format": "",
     		"tooltip": "Power Off",
 		"on-click": "systemctl poweroff",

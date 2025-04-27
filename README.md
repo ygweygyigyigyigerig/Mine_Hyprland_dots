@@ -77,11 +77,13 @@
 
 - **Notification center**: swaync
 
+- **Gui app for networkmanager**: nm-connection-editor
+
 You can install all dependencies with commands below:
 
 1. Packages that can be installed with pacman
 ```bash
-sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland ttf-jetbrains-mono-nerd hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl
+sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland ttf-jetbrains-mono-nerd hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl nm-connection-editor
 ```
 2. Packages that can be installed with yay
 ```bash
