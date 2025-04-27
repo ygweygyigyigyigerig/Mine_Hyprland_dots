@@ -41,7 +41,7 @@
       },	
 
 	"clock": {
-	"format": "{:%H:%M}",
+	"format": "  {:%H:%M} ",
         "interval": 60
         }, 
 
