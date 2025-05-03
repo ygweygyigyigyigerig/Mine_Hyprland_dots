@@ -53,7 +53,7 @@
 
 - **Qt based software support**: qt6-wayland and qt5-wayland
   
-- **Fonts**: ttf-jetbrains-mono-nerd
+- **Fonts**: nerd-fonts
 
 - **Lock screen**: hyprlock
 
@@ -83,7 +83,7 @@ You can install all dependencies with commands below:
 
 1. Packages that can be installed with pacman
 ```bash
-sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland ttf-jetbrains-mono-nerd hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl nm-connection-editor
+sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland nerd-fonts hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl nm-connection-editor
 ```
 2. Packages that can be installed with yay
 ```bash
