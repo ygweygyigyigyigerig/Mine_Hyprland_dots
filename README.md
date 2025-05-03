@@ -82,15 +82,22 @@
 
 - **Gui app for networkmanager**: nm-connection-editor
 
+- **Text editor**: nvim (lazy vim)
+
+  
 You can install all dependencies with commands below:
 
 1. Packages that can be installed with pacman
 ```bash
-sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland nerd-fonts hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl nm-connection-editor
+sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland nerd-fonts hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl nm-connection-editor nvim
 ```
 2. Packages that can be installed with yay
 ```bash
 yay -S hyprlock wlogout
+```
+3. Packages to get from github
+```bash
+git clone https://github.com/LazyVim/starter ~/.config/nvim
 ```
 There are also a few dependencies for notification center **swaync**:
 ```bash
