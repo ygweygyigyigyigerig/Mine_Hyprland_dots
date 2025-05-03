@@ -37,6 +37,9 @@
 | ```Mod + J```	| Toggle split layout (dwindle) |
 | ```Mod + W``` |	Open power option menu |
 | ```Mod + PrintScreen``` | Take screenshot |
+| ```Mod + N``` | Maximize window |
+| ```Mod + Z``` | Re-load waybar config |
+| ```Mod + D``` | Fully close discord (it won't run in background) |
 
 
 # Dependencies
