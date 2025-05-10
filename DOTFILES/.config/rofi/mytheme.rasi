@@ -1,3 +1,5 @@
+// This is a file for rofi that contains colors
+
 * {
   background-color: #282a36;
   text-color:       #f8f8f2;
