@@ -1,3 +1,11 @@
+/* __        ___                         _    */
+/* \ \      / / | ___   __ _  ___  _   _| |_  */
+/*  \ \ /\ / /| |/ _ \ / _` |/ _ \| | | | __| */
+/*   \ V  V / | | (_) | (_| | (_) | |_| | |_  */
+/*    \_/\_/  |_|\___/ \__, |\___/ \__,_|\__| */
+/*                     |___/                  */
+/*  by ygweygyigyigyigerig (2025)             */
+
 * {
 	background-image: none;
 	box-shadow: none;
@@ -8,10 +16,10 @@ window {
 }
 
 button {
-    border-radius: 0;
-    border-color: black;
+  border-radius: 0;
+  border-color: black;
 	text-decoration-color: #FFFFFF;
-    color: #FFFFFF;
+  color: #FFFFFF;
 	background-color: #1E1E1E;
 	border-style: solid;
 	border-width: 1px;
@@ -25,25 +33,25 @@ button:active, button:hover {
 	outline-style: none;
 }
 #lock {
-    background-image: image(url("icons/lock.png"));
+  background-image: image(url("icons/lock.png"));
 }
 
 #logout {
-    background-image: image(url("icons/logout.png"));
+  background-image: image(url("icons/logout.png"));
 }
 
 #suspend {
-    background-image: image(url("icons/suspend.png"));
+  background-image: image(url("icons/suspend.png"));
 }
 
 #hibernate {
-    background-image: image(url("icons/hibernate.png"));
+  background-image: image(url("icons/hibernate.png"));
 }
 
 #shutdown {
-    background-image: image(url("icons/shutdown.png"));
+  background-image: image(url("icons/shutdown.png"));
 }
 
 #reboot {
-    background-image: image(url("icons/reboot.png"));
+  background-image: image(url("icons/reboot.png"));
 }

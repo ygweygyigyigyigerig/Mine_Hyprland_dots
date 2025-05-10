@@ -1,3 +1,10 @@
+/* __        __          _                      _         _       */
+/* \ \      / /_ _ _   _| |__   __ _ _ __   ___| |_ _   _| | ___  */
+/*  \ \ /\ / / _` | | | | '_ \ / _` | '__| / __| __| | | | |/ _ \ */
+/*   \ V  V / (_| | |_| | |_) | (_| | |    \__ \ |_| |_| | |  __/ */
+/*    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    |___/\__|\__, |_|\___| */
+/*                 |___/                            |___/         */
+/*  by ygweygyigyigyigerig (2025)  */
 
 * {
 	padding: 0;
@@ -94,13 +101,13 @@
 	margin-right: 10px
 }
 #custom-network-gui {
-          background-color: #2b2a2a;
-          border: 1px solid #2b2a2a;
-          border-radius: 10px;
-          margin-top: 5px;
-          margin-bottom: 5px;
-          margin-left: 8px;
-          padding-left: 6px;
-          padding-right: 6px;
-	   margin-left: 10px;
+  background-color: #2b2a2a;
+  border: 1px solid #2b2a2a;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 8px;
+  padding-left: 6px;
+  padding-right: 6px;
+	margin-left: 10px;
 }
