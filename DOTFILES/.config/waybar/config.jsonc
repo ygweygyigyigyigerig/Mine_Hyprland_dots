@@ -73,7 +73,7 @@
 	},
 
 	"custom/network-gui": {
-    "format": "",
+    "format": "🖧",
     "tooltip": "Network manager",
     "on-click": "nmtui",
     "interval": 3600
