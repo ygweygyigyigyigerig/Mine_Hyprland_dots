@@ -75,7 +75,7 @@
 	"custom/network-gui": {
     "format": "",
     "tooltip": "Network manager",
-    "on-click": "nm-connection-editor",
+    "on-click": "nmtui",
     "interval": 3600
   },		
 
