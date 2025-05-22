@@ -52,6 +52,7 @@
 
 	"clock": {
 	  "format": "  {:%H:%M} ",
+    "on-click": "gnome-clocks",
     "interval": 60
   }, 
 

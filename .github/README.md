@@ -84,12 +84,13 @@
 
 - **Text editor**: nvim (lazy vim)
 
+- **Clock app**: gnome-clocks
   
 You can install all dependencies with commands below:
 
 1. Packages that can be installed with pacman
 ```bash
-sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland nerd-fonts hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl nmtui nvim
+sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland nerd-fonts hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl nmtui nvim gnome-clocks
 ```
 2. Packages that can be installed with yay
 ```bash
