@@ -76,7 +76,7 @@
 	"custom/network-gui": {
     "format": "🖧",
     "tooltip": "Network manager",
-    "on-click": "nmtui",
+    "on-click": "kitty sh -c nmtui",
     "interval": 3600
   },		
 
