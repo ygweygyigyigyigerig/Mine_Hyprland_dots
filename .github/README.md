@@ -80,7 +80,7 @@
 
 - **Notification center**: swaync
 
-- **Gui app for networkmanager**: nm-connection-editor
+- **Tui app for networkmanager**: nmtui
 
 - **Text editor**: nvim (lazy vim)
 
@@ -89,7 +89,7 @@ You can install all dependencies with commands below:
 
 1. Packages that can be installed with pacman
 ```bash
-sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland nerd-fonts hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl nm-connection-editor nvim
+sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-wayland nerd-fonts hyprlock hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl nmtui nvim
 ```
 2. Packages that can be installed with yay
 ```bash
