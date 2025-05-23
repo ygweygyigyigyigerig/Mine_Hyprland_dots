@@ -20,7 +20,7 @@
 | Terminal | [Kitty 🐱](https://github.com/kovidgoyal/kitty) |
 | Power menu | [Wlogout ⏻](https://github.com/ArtsyMacaw/wlogout) |
 
-![Image](https://github.com/user-attachments/assets/b1c5f48a-5519-4f76-b890-fb08380da746)
+![Image](https://github.com/user-attachments/assets/5a9802da-40d1-477b-a083-b5e4b8b24a35)
 > Desktop with rofi and swaync open
 # Shortcuts 
 
