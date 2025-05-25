@@ -94,7 +94,7 @@ sudo pacman -S networkmanager zsh pulseaudio bluez bluez-utils qt6-wayland qt5-w
 ```
 2. Packages that can be installed with yay
 ```bash
-yay -S hyprlock wlogout
+yay -S hyprlock wlogout hyprshot
 ```
 3. Packages to get from github
 ```bash
