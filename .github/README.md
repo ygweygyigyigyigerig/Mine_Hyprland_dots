@@ -105,7 +105,7 @@ There are also a few dependencies for notification center **swaync**:
 sudo pacman -S swaync vala meson blueprint-compiler git scdoc sassc gtk4 gtk4-layer-shell dbus glib2 gobject-introspection libgee json-glib libadwaita gvfs granite7
 ```
 
-# Instalation process (works only for arch and arch based distros)
+# Instalation process (Tested only on Arch and arch based distros)
 If everything worked, or didn't work at all, either way please contact me in discord.
 My nick is at [disclaimer](#Disclaimer) section.
 
@@ -150,7 +150,7 @@ Congratulation ! You've just installed your new shiny dotfiles.
 
 # Disclaimer
 This project is still under development.
-Some configurations may not work (beacaucse I could paste them wrongly) or It could miss few dependencies (since knowing my self there's vey high chance I forgot about them) there's also (not as big tho) chance of installe/setup script breaking, and changes will be made over time. 
+Some configurations may not work (because I could paste them wrongly) or It could miss few dependencies (since knowing my self there's vey high chance I forgot about them) there's also (not as big tho) chance of installe/setup script breaking, and changes will be made over time. 
 If you encounter any issues, feel free to DM me on discord, and I'll do my best to assist.
 
 My Discord user name is : szymonschabiak
