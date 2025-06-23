@@ -24,6 +24,7 @@
 	"modules-right": [
 		"wlr/taskbar",
 		"custom/space",
+    "bluetooth",
 		"clock",
 		"custom/space",
 		"pulseaudio#sink",
@@ -49,6 +50,12 @@
     "on-click": "activate",
     "format": "{icon}"
   },	
+
+  "bluetooth":{
+    "format": " ",
+    "on-click": "blueman-manager",
+    "interval": 60
+  },
 
 	"clock": {
 	  "format": "  {:%H:%M} ",
