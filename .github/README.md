@@ -146,7 +146,8 @@ mkdir -p ~/.config/gtk-3.0
 nvim ~/.config/gtk-3.0/settings.ini
 ```
 Paste this to file you just opened, and then save file:
-```[Settings]
+```
+[Settings]
 gtk-application-prefer-dark-theme=true
 gtk-button-images=true
 gtk-cursor-theme-name=breeze_cursors
