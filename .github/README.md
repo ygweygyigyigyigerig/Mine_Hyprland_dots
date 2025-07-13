@@ -50,6 +50,8 @@
 
 - **Shell**: zsh (config will be uploaded in future)
 
+- **AUR helper**: yay
+
 - **Audio**: pulseaudio
 
 - **Bluetooth**: blueman and bluetooth-manager
