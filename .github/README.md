@@ -82,7 +82,9 @@
 
 - **Tui app for networkmanager**: nmtui
 
-- **Text editor**: nvim (lazy vim)
+- **IDE/Text editor**: nvim (lazy vim)
+
+- **Text editor**: vim
 
 - **Clock app**: gnome-clocks
 
@@ -93,7 +95,7 @@ You can install all dependencies with commands below:
 
 1. Packages that can be installed with pacman
 ```bash
-sudo pacman -S networkmanager zsh pulseaudio blueman qt6-wayland qt5-wayland nerd-fonts hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl nvim gnome-clocks rsync jq ttf-nerd-fonts-symbols breeze-gtk breeze-icons noto-fonts gtk3 gtk4
+sudo pacman -S networkmanager zsh pulseaudio blueman qt6-wayland qt5-wayland nerd-fonts hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl nvim gnome-clocks rsync jq ttf-nerd-fonts-symbols breeze-gtk breeze-icons noto-fonts gtk3 gtk4 vim
 ```
 2. Packages that can be installed with yay
 ```bash
@@ -105,7 +107,7 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 ```
 There are also a few dependencies for notification center **swaync**:
 ```bash
-sudo pacman -S swaync vala meson blueprint-compiler git scdoc sassc gtk4 gtk4-layer-shell dbus glib2 gobject-introspection libgee json-glib libadwaita gvfs granite7
+sudo pacman -S swaync vala meson blueprint-compiler git scdoc sassc gtk4-layer-shell dbus glib2 gobject-introspection libgee json-glib libadwaita gvfs granite7
 ```
 
 # Instalation process (Tested only on Arch and arch based distros)
@@ -143,7 +145,7 @@ My nick is at [disclaimer](#Disclaimer) section.
 **5. Get gtk theme set to breeze using commends below:**
 ```
 mkdir -p ~/.config/gtk-3.0
-nvim ~/.config/gtk-3.0/settings.ini
+vim ~/.config/gtk-3.0/settings.ini
 ```
 Paste this to file you just opened, and then save file:
 ```
