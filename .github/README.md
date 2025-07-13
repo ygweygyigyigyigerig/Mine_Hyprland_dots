@@ -93,7 +93,7 @@ You can install all dependencies with commands below:
 
 1. Packages that can be installed with pacman
 ```bash
-sudo pacman -S networkmanager zsh pulseaudio blueman qt6-wayland qt5-wayland nerd-fonts hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl nvim gnome-clocks rsync jq ttf-nerd-fonts-symbols
+sudo pacman -S networkmanager zsh pulseaudio blueman qt6-wayland qt5-wayland nerd-fonts hyprpaper hyprland waybar rofi-wayland wofi firefox kitty dolphin curl nvim gnome-clocks rsync jq ttf-nerd-fonts-symbols breeze-gtk breeze-icons noto-fonts gtk3 gtk4
 ```
 2. Packages that can be installed with yay
 ```bash
