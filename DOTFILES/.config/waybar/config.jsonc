@@ -55,7 +55,7 @@
 
   "custom/changenetworkdisplay": {
     "icon-size": 23,
-    "on-click": "kitty bash ~/.config/scripts/set_waybar_iface.sh",
+    "on-click": "kitty --class MyScriptWindow -e ~/.config/scripts/set_waybar_iface.sh",
     "format": " "
   },
 
