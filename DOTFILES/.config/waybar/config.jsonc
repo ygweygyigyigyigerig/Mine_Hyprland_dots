@@ -26,7 +26,7 @@
 		"wlr/taskbar",
 		"custom/space",
 		"bluetooth",
-    "clock",
+    		"clock",
 		"custom/space",
 		"pulseaudio#sink",
 		"pulseaudio/slider",
@@ -64,9 +64,9 @@
     "on-click": "blueman-manager",
     "interval": 60
   },
-
-	"clock": {
-	  "format": "  {:%H:%M} ",
+   
+  "clock": {
+    "format": "  {:%H:%M} ",
     "on-click": "gnome-clocks",
     "interval": 60
   }, 
@@ -88,40 +88,40 @@
 		]
 	},
 
-	"custom/network-gui": {
+   "custom/network-gui": {
     "format": "🖧",
     "tooltip": "Network manager",
     "on-click": "kitty sh -c nmtui",
     "interval": 3600
   },		
 
-	"custom/poweroff": {
-	  "format": "",
-    "tooltip": "Power Off",
-	  "on-click": "systemctl poweroff",
+       "custom/poweroff": {
+	"format": "",
+    	"tooltip": "Power Off",
+	"on-click": "systemctl poweroff",
   	"interval": 3600
   },
 
-	"custom/reboot": {
-		"format": "",
+       "custom/reboot": {
+	"format": "",
    	"tooltip": "reboot",
-		"on-click": "reboot",
+	"on-click": "reboot",
   	"interval": 3600
   },
 
 
-	"custom/lock": {
-		"format": "",
-    "tooltip": "lock",
-		"on-click": "hyprlock",
+       "custom/lock": {
+	"format": "",
+        "tooltip": "lock",
+	"on-click": "hyprlock",
   	"interval": 3600
   },
 
-	"custom/swaync": {
+	       "custom/swaync": {
 		"format": "",
-    "tooltip": "notification center",
+    		"tooltip": "notification center",
 		"on-click": "swaync-client -t -sw",
-  	"interval": 3600
+  		"interval": 3600
   },
 
 	"network#net2": {
