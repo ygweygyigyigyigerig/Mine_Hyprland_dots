@@ -101,7 +101,7 @@
 	margin-right: 10px
 }
 #bluetooth {
-  margin-right: 9px
+  margin-right: 9px 
 }
 #custom-network-gui {
   background-color: #2b2a2a;
@@ -114,3 +114,15 @@
   padding-right: 6px;
 	margin-left: 10px;
 }
+#custom-changenetworkdisplay {
+  background-color: #2b2a2a;
+  border: 1px solid #2b2a2a;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 8px;
+  padding-left: 6px;
+  padding-right: 1px;
+	margin-left: 10px;
+}
+

@@ -16,7 +16,8 @@
 		"network",
 		"custom/void",
 		"network#net2",
-		"custom/network-gui"
+		"custom/network-gui",
+    "custom/changenetworkdisplay"
 	],
 	"modules-center": [
 		"hyprland/workspaces"
@@ -24,8 +25,8 @@
 	"modules-right": [
 		"wlr/taskbar",
 		"custom/space",
-    "bluetooth",
-		"clock",
+		"bluetooth",
+    "clock",
 		"custom/space",
 		"pulseaudio#sink",
 		"pulseaudio/slider",
@@ -35,6 +36,7 @@
 		"custom/lock",
 		"custom/swaync"
 	],
+
 	"hyprland/workspaces": {
 		"active-only": false,
 		"all-outputs": true,
@@ -44,14 +46,20 @@
 		"on-click": "activate",
 		"height": 0
 	},
-
+  
   "wlr/taskbar": {
     "icon-size": 23,
     "on-click": "activate",
     "format": "{icon}"
-  },	
+  },
 
-  "bluetooth":{
+  "custom/changenetworkdisplay": {
+    "icon-size": 23,
+    "on-click": "kitty bash ~/.config/scripts/set_waybar_iface.sh",
+    "format": " "
+  },
+
+  "bluetooth": {
     "format": " ",
     "on-click": "blueman-manager",
     "interval": 60
@@ -164,3 +172,4 @@
 		"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- -l 2.0"
 	},
 }
+
