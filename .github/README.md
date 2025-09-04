@@ -52,7 +52,7 @@
 
 - **AUR helper**: yay
 
-- **Audio**: pulseaudio
+- **Audio**: pipewire 
 
 - **Bluetooth**: blueman and bluetooth-manager
 
@@ -78,7 +78,7 @@
 
 - **File manager**: dolphin
 
-- **Screnshot software**: hypershot
+- **Screnshot software**: hyprshot
 
 - **Notification center**: swaync
 
