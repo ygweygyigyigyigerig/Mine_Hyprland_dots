@@ -143,32 +143,7 @@ My nick is at [disclaimer](#Disclaimer) section.
 
 **4. Do whatever installer potentionally told you to**
 
-
-**5. Get gtk theme set to breeze using commends below:**
-```
-mkdir -p ~/.config/gtk-3.0
-vim ~/.config/gtk-3.0/settings.ini
-```
-Paste this to file you just opened, and then save file:
-```
-[Settings]
-gtk-application-prefer-dark-theme=true
-gtk-button-images=true
-gtk-cursor-theme-name=breeze_cursors
-gtk-cursor-theme-size=24
-gtk-decoration-layout=icon:minimize,maximize,close
-gtk-enable-animations=true
-gtk-font-name=Noto Sans,  10
-gtk-icon-theme-name=breeze-dark
-gtk-menu-images=true
-gtk-modules=window-decorations-gtk-module:colorreload-gtk-module
-gtk-primary-button-warps-slider=true
-gtk-sound-theme-name=ocean
-gtk-theme-name=Breeze
-gtk-toolbar-style=3
-gtk-xft-dpi=98304
-```
-**6. Reboot**
+**5. Reboot**
 
 Congratulation ! You've just installed your new shiny dotfiles.
 
