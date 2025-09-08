@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #fancy title
-cat << "HI"
+cat <<"HI"
 ____       _
 / ___|  ___| |_ _   _ _ __
 \___ \ / _ \ __| | | | '_ \
@@ -31,7 +31,7 @@ fi
 echo "${bold}Starting setup of Hyprland dotfiles...${normal}"
 
 # List of sub‑folders in .config to install
-declare -a apps=(hypr waybar swaync rofi scripts kitty wlogout nvim)
+declare -a apps=(hypr waybar swaync rofi scripts kitty wlogout nvim gtk-3.0)
 
 for app in "${apps[@]}"; do
   SRC="$DOTFILES_DIR/$app"
@@ -57,7 +57,7 @@ for app in "${apps[@]}"; do
   cp -r "$SRC"/. "$DEST"/
 done
 
-cat << "BYE-SETUP"
+cat <<"BYE-SETUP"
  ____       _
 / ___|  ___| |_ _   _ _ __   __      ____ _ ___
 \___ \ / _ \ __| | | | '_ \  \ \ /\ / / _` / __|
@@ -75,4 +75,4 @@ echo "${bold}Setup complete!${normal}"
 echo "Your configs live in ~/.config/{${apps[*]}}"
 echo "Old versions (if any) backed up as *-backup-<timestamp>."
 echo "run following commend to chose which network interface to use for waybar module"
-echo "bash ~/.config/scripts/set_waybar_iface.sh" 
+echo "bash ~/.config/scripts/set_waybar_iface.sh"
