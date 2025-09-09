@@ -157,8 +157,7 @@ Congratulation ! You've just installed your new shiny dotfiles.
 
 # Disclaimer
 This project is still under development.
-Some configurations may not work (because I could paste them wrongly) or It could miss few dependencies (since knowing my self there's vey high chance I forgot about them) there's also (not as big tho) chance of installe/setup script breaking, and changes will be made over time. 
-If you encounter any issues, feel free to DM me on discord, and I'll do my best to assist.
+Most things should work flawlessly but if you encounter any issues, feel free to DM me on discord, and I'll do my best to assist.
 
 My Discord user name is : szymonschabiak
 
