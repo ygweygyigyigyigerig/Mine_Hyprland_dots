@@ -19,8 +19,7 @@
 | Shell | [Zsh 🐚](https://zsh.sourceforge.io/) (in progress) |
 | Terminal | [Kitty 🐱](https://github.com/kovidgoyal/kitty) |
 | Power menu | [Wlogout ⏻](https://github.com/ArtsyMacaw/wlogout) |
-
-![Image](https://github.com/user-attachments/assets/5a9802da-40d1-477b-a083-b5e4b8b24a35)
+<img width="2560" height="1441" alt="Image" src="https://github.com/user-attachments/assets/06700756-c4c2-4168-9b52-4ca939934ba6" />
 > Desktop with rofi and swaync open
 # Shortcuts 
 
