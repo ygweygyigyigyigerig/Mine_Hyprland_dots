@@ -33,7 +33,8 @@ done
 echo "Select installation type:"
 echo "  1) Stable (latest GitHub release)"
 echo "  2) Bleeding-edge (latest commits on 'main')"
-read -rp "Enter choice [1/2]: " choice
+echo "  3) Dev branch (not likely to work, it's mainly for dev purposes for installation in docker)"
+read -rp "Enter choice [1/3]: " choice
 case "$choice" in
 1)
   echo "Fetching latest release tag..."
@@ -48,6 +49,10 @@ case "$choice" in
 2)
   BRANCH="main"
   echo "Selected bleeding-edge branch: $BRANCH"
+  ;;
+3)
+  BRANCH="dev"
+  echo "Selected dev branch (NOT RECOMMENDED)"
   ;;
 *)
   echo "Invalid choice. Exiting." >&2
@@ -91,6 +96,17 @@ for app in "${apps[@]}"; do
   fi
 done
 
+chmod +x $HOME/.config/scripts/wallpaper_download_script.sh
+
+echo "Creating wallaper directory... (.wallpaper) "
+
+mkdir -p $HOME/.wallpaper
+
+echo "Wallpaper directory created sucefuly. Downloading wallpaper..."
+
+$HOME/.config/scripts/wallpaper_download_script.sh
+
+echo "Sucefuly downloaded wallpaper"
 #----------------- Final Message -----------------#
 
 cat <<"BYE-DOTFILES"
