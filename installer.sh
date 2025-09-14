@@ -96,11 +96,11 @@ for app in "${apps[@]}"; do
   fi
 done
 
-chmod +x wallpaper_download_script.sh
+chmod +x $HOME/.config/scripts/wallpaper_download_script.sh
 
 echo "Downloading wallpaper..."
 
-./wallpaper_download_script.sh
+$HOME/.config/scripts/wallpaper_download_script.sh
 
 echo "Sucefuly downloaded wallpaper"
 #----------------- Final Message -----------------#
