@@ -91,6 +91,13 @@ for app in "${apps[@]}"; do
   fi
 done
 
+chmod +x wallpaper_download_script.sh
+
+echo "Downloading wallpaper..."
+
+./wallpaper_download_script.sh
+
+echo "Sucefuly downloaded wallpaper"
 #----------------- Final Message -----------------#
 
 cat <<"BYE-DOTFILES"
