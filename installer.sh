@@ -33,6 +33,7 @@ done
 echo "Select installation type:"
 echo "  1) Stable (latest GitHub release)"
 echo "  2) Bleeding-edge (latest commits on 'main')"
+echo "  3) Dev branch (not likely to work, it's mainly for dev purposes for installation in docker)"
 read -rp "Enter choice [1/2]: " choice
 case "$choice" in
 1)
@@ -49,6 +50,9 @@ case "$choice" in
   BRANCH="main"
   echo "Selected bleeding-edge branch: $BRANCH"
   ;;
+3)
+  BRANCH="dev"
+
 *)
   echo "Invalid choice. Exiting." >&2
   exit 1
