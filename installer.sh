@@ -98,7 +98,11 @@ done
 
 chmod +x $HOME/.config/scripts/wallpaper_download_script.sh
 
-echo "Downloading wallpaper..."
+echo "Creating wallaper directory... (.wallpaper) "
+
+mkdir -p $HOME/.wallpaper
+
+echo "Wallpaper directory created sucefuly. Downloading wallpaper..."
 
 $HOME/.config/scripts/wallpaper_download_script.sh
 
