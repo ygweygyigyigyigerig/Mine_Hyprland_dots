@@ -34,7 +34,7 @@ echo "Select installation type:"
 echo "  1) Stable (latest GitHub release)"
 echo "  2) Bleeding-edge (latest commits on 'main')"
 echo "  3) Dev branch (not likely to work, it's mainly for dev purposes for installation in docker)"
-read -rp "Enter choice [1/2]: " choice
+read -rp "Enter choice [1/3]: " choice
 case "$choice" in
 1)
   echo "Fetching latest release tag..."
@@ -52,7 +52,8 @@ case "$choice" in
   ;;
 3)
   BRANCH="dev"
-
+  echo "Selected dev branch (NOT RECOMMENDED)"
+  ;;
 *)
   echo "Invalid choice. Exiting." >&2
   exit 1
