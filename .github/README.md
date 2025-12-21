@@ -1,3 +1,6 @@
+# Developers note: this repo works, and will be maitained to keep doing so but development and rolling out new features has stopped. 
+
+
 <div align="center">
   <img alt="Profiles Pictures" src="https://github.com/user-attachments/assets/c5663bff-358e-4727-99c2-6345eea5c2bd" width="200" height="200"/>
 </div>
