@@ -156,10 +156,3 @@ Congratulation ! You've just installed your new shiny dotfiles.
 - I'd like to thank BinaryHarbinger aswell for giving me swaync config. Here's link to his repo: https://github.com/BinaryHarbinger/Dotfiles
 
 - And finally, a biggest shoutout to the co-developer and contributor, [FrogProg09](https://github.com/FrogProg09) that brings a lot into repo!
-
-# Disclaimer
-This project is still under development.
-Most things should work flawlessly but if you encounter any issues, feel free to DM me on discord, and I'll do my best to assist.
-
-My Discord user name is : szymonschabiak
-
