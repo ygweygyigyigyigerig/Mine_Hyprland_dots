@@ -1,4 +1,4 @@
-# Developers note: this repo works, and will be maitained to keep doing so but development and rolling out new features has stopped. 
+# Developers note: repo no longer workshop due to move of scripting lang to lua
 
 
 <div align="center">
